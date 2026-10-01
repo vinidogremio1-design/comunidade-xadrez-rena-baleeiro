@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jogo de Xadrez | Comunidade Rena Baleeiro</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="app.js"></script>
-  </head>
-  <body class="game-page">
-    <header class="game-header">
-      <div class="container game-header-inner">
-        <a href="index.html" class="back-link">← Voltar</a>
-        <h1>Jogo de Xadrez</h1>
-      </div>
-    </header>
+const boardElement = document.getElementById('board');
+const statusElement = document.getElementById('status');
+const resetButton = document.getElementById('reset-btn');
 
-    <main class="game-main">
-      <div class="container game-layout">
-        <section class="board-panel">
-          <div id="board" class="board" aria-label="Tabuleiro de xadrez"></div>
-        </section>
-
-        <aside class="side-panel">
-          <div class="panel-box">
-            <p class="panel-label">Status</p>
-            <h2 id="status">Vez das peças brancas</h2>
-          </div>
-
-          <div class="panel-box">
-            <p class="panel-label">Ações</p>
-            <button id="reset-btn" class="button primary full">Reiniciar partida</button>
-          </div>
-        </aside>
-      </div>
-    </main>
-  </body>
-</html>
+const files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
